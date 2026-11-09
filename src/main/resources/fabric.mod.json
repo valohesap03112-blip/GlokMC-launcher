@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "glokmc-client",
+  "version": "${version}",
+  "name": "GlokMC Client",
+  "description": "GlokMC sunucusuna özel istemci: ESC menüsünde GlokMC Ayarları, FPS göstergesi, zoom ve daha fazlası.",
+  "authors": ["GlokMC"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["me.glokmc.client.GlokMCClient"]
+  },
+  "mixins": ["glokmc-client.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
